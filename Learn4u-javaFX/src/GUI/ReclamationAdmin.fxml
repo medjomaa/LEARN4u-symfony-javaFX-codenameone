@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ReclamationController1Admin">
+   <right>
+      <AnchorPane prefHeight="498.0" prefWidth="675.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="29.0" layoutY="14.0" text="Reclamation" textFill="#b81f14">
+               <font>
+                  <Font name="MS Outlook" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="39.0" layoutY="63.0" onSort="#list" prefHeight="303.0" prefWidth="569.0">
+               <columns>
+                  <TableColumn fx:id="rating" prefWidth="75.0" text="Type" />
+                  <TableColumn fx:id="title" prefWidth="124.0" text="Description" />
+                  <TableColumn fx:id="category" prefWidth="188.0" text="User" />
+                  <TableColumn fx:id="content" prefWidth="181.0" text="Reponse" />
+               </columns>
+            </TableView>
+            <Button fx:id="supprimer" layoutX="275.0" layoutY="399.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #ff0000;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="391.0" layoutY="399.0" mnemonicParsing="false" onAction="#pdf" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: #00ddd1;" text="pdf" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tfsearch" layoutX="261.0" layoutY="19.0" text="Search by Title" />
+            <Button layoutX="452.0" layoutY="19.0" mnemonicParsing="false" onAction="#chercher" prefHeight="25.0" prefWidth="78.0" text="search" />
+            <Button layoutX="569.0" layoutY="19.0" mnemonicParsing="false" onAction="#list" prefHeight="25.0" prefWidth="78.0" text="Refrech" />
+            <Button layoutX="508.0" layoutY="399.0" mnemonicParsing="false" onAction="#edit" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #00008B;" text="Edit" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

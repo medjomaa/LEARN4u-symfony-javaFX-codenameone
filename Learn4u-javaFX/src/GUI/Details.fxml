@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DetailsController">
+   <children>
+      <Label layoutX="63.0" layoutY="152.0" text="Category:" textFill="#41ab17">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="209.0" text="Nom:" textFill="#41ab17">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="260.0" text="Description:" textFill="#41ab17">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="315.0" text="Prix:" textFill="#41ab17">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="CLabel" layoutX="328.0" layoutY="161.0" text="Category" textFill="#17a3a8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="NLabel" layoutX="328.0" layoutY="227.0" text="Nom" textFill="#17a3a8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="DLabel" layoutX="328.0" layoutY="278.0" text="Description" textFill="#17a3a8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="PLabel" layoutX="328.0" layoutY="324.0" text="Prix" textFill="#17a3a8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="ErreurNom" layoutX="75.0" layoutY="237.0" text="Veuillez entrer un nom!!" />
+   </children>
+</AnchorPane>
